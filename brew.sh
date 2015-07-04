@@ -42,6 +42,13 @@ brew install screen
 brew install watch
 brew install wdiff --with-gettext
 
+
+
+#Services
+brew install mysql
+brew install redis
+
+
 # Installing jenv
 brew install jenv
 echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
