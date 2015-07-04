@@ -9,3 +9,4 @@ echo "Done."
 
 ./brew.sh
 ./brew_cask.sh
+./install_dotfiles.sh
