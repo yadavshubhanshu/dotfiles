@@ -1,6 +1,4 @@
 
-
-
 # set terminal title
 function title() {
   echo -en "\033]2;$1\007";
@@ -9,6 +7,11 @@ function title() {
 # Get process info related to the supplied port
 function whoport() {
   lsof -i :$1
+}
+
+#prepend to PATH environment variable
+function prepend-path() {
+    [ -d $1 ] && PATH="$1:$PATH"
 }
 
 

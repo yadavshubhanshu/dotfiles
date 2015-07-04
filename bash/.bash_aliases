@@ -1,6 +1,3 @@
-#!/bin/bash
-
-
 
 #Show Aliases and Functions
 alias listaliases="alias | sed 's/=.*//'"
