@@ -1,7 +1,7 @@
 
 #Adding an appropriate PATH variable for use with MacPorts.
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
 #Setting the bash directory containing all the settings
 export BASH_DIR=~/.bash
 
