@@ -7,8 +7,9 @@ export BASH_DIR=~/.bash
 
 #Sourcing all the files
 source ${BASH_DIR}/.bash_aliases
-source ${BASH_DIR}/.bash_functions
-source ${BASH_DIR}/
+source ${BASH_DIR}/.functions
+source ${BASH_DIR}/.bash_prompt
+source ${BASH_DIR}/.bash_env_vars
 
 
 # Add tab completion for many Bash commands
