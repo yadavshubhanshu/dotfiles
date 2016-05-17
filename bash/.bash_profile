@@ -1,7 +1,11 @@
-
+#!/bin/bash
+#set -x
 #Adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+#export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+#export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+export PATH="/usr/local/opt/bash/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="$HOME/.jenv/bin:$PATH"
+export PATH="/Users/shubhanshu/dev/softwares/terraform:$PATH"
 #Setting the bash directory containing all the settings
 export BASH_DIR=~/.bash
 
@@ -10,6 +14,7 @@ source ${BASH_DIR}/.bash_aliases
 source ${BASH_DIR}/.functions
 source ${BASH_DIR}/.bash_prompt
 source ${BASH_DIR}/.bash_env_vars
+source ${BASH_DIR}/.bash_office
 
 
 # Add tab completion for many Bash commands

@@ -69,7 +69,7 @@ alias vgs="vagrant global-status"
 
 
 # alias for fuck
-alias fuck="eval $(thefuck $(fc -ln -1)); history -r"
+alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 alias please="fuck"
 
 
