@@ -59,4 +59,15 @@ function extract() {
     fi
 }
 
+function new-alias() {
+    lastcomment=$(history | tail -n2 | head -n1 | awk '{$1="";print $0}')
+    printf "\nalias $1=\"$lastcomment \"" >> $HOME/dotfiles/bash/.${2}
+}
 
+function new-alias-personal() {
+    new-alias $1 bash_aliases
+}
+
+function new-alias-office() {
+    new-alias $1 bash_office
+}

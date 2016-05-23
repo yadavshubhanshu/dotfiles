@@ -15,4 +15,5 @@
 ~/.bash/.functions, /bash/.functions
 ~/.bash/.bash_prompt, /bash/.bash_prompt
 ~/.bash/.bash_env_vars, /bash/.bash_env_vars
+~/.bash/.bash_office, /bash/.bash_office
 
