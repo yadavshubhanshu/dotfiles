@@ -60,7 +60,7 @@ function extract() {
 }
 
 function new-alias() {
-    lastcomment=$(history | tail -n2 | head -n1 | awk '{$1="";print $0}')
+    lastcomment=$(history | tail -n2 | head -n1 | awk '{$1="";print $0}' | sed 's/^ *//g')
     printf "\nalias $1=\"$lastcomment \"" >> $HOME/dotfiles/bash/.${2}
 }
 
