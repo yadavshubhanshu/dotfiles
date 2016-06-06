@@ -67,3 +67,4 @@ alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 alias date="date '+DATE: %v%nTIME: %H:%M:%S'"
 alias quit="exit"
 alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
+alias l25="ssh-add -D;ssh play@10.0.14.25 "

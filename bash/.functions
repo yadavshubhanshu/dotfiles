@@ -59,15 +59,36 @@ function extract() {
     fi
 }
 
-function new-alias() {
+function alias-new() {
     lastcomment=$(history | tail -n2 | head -n1 | awk '{$1="";print $0}' | sed 's/^ *//g')
     printf "\nalias $1=\"$lastcomment \"" >> $HOME/dotfiles/bash/.${2}
 }
 
-function new-alias-personal() {
-    new-alias $1 bash_aliases
+function alias-new-personal() {
+    alias-new $1 bash_aliases
 }
 
-function new-alias-office() {
-    new-alias $1 bash_office
+function alias-new-office() {
+    alias-new $1 bash_office
+}
+
+function alias-modify-office() {
+    sed --in-place "/^alias $1/d" $HOME/dotfiles/bash/.bash_office
+    alias-new-office $1
+}
+
+function alias-modify-personal() {
+    sed --in-place "/^alias $1/d" $HOME/dotfiles/bash/.bash_aliases
+    alias-new-personal $1
+}
+
+function git-move-commit-new-branch() {
+    if [ "$#" -ne 2 ]; then
+        echo "This requires 2 arguments"
+        echo "1st is the new branch name"
+        echo "2nd is the number of commits to go back to"
+    fi
+    git branch $1
+    git reset --hard HEAD~$2
+    git checkout $1
 }
