@@ -20,9 +20,6 @@ export LESS_TERMCAP_md="${yellow}"
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X'
 
-# Always enable colored `grep` output.
-export GREP_OPTIONS='--color=auto'
-
 # Set CLICOLOR if you want Ansi Colors in iTerm2
 export CLICOLOR=1
 

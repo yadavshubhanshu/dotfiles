@@ -29,6 +29,7 @@ alias gip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias copy="pbcopy"
 alias paste="pbpaste"
 alias quickdiff="diff --side-by-side --suppress-common-lines -W 150"
+alias grep="grep --color=auto"
 
 #Remove Apple Meta Files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
