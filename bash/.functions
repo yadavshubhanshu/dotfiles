@@ -92,3 +92,11 @@ function git-move-commit-new-branch() {
     git reset --hard HEAD~$2
     git checkout $1
 }
+
+function cheat ()
+{
+    local topic="$1";
+    shift;
+    local query="$*";
+    curl "cht.sh/${topic}/${query// /+}"
+}
